@@ -1,0 +1,25 @@
+version: "3.4"
+services:
+  ecattle-query:
+    ports:
+      - "4000:4000"
+    command: npm run dev
+    volumes:
+      - ../query:/usr/app
+  ecattle-kernel:
+    ports:
+      - "3000:3000"
+    command: npm run start
+    volumes:
+      - ../kernel:/usr/app
+  ecattle-mongo-express:
+    container_name: ecattle-mongo-express
+    image: mongo-express:0.49
+    ports:
+      - "8081:8081"
+    environment:
+      TZ: America/Campo_Grande
+      # ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      # ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      # ME_CONFIG_MONGODB_SERVER: "192.168.15.99"
+      ME_CONFIG_MONGODB_SERVER: "ecattle-mongo"

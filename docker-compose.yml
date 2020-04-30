@@ -1,0 +1,36 @@
+version: "3.4"
+services:
+  ecattle-query:
+    container_name: ecattle-query
+    build:
+      context: ../query
+      dockerfile: Dockerfile
+    environment:
+      TZ: America/Campo_Grande
+      APP_PK:
+      MONGO_URI:
+      REDIS_HOST:
+      REDIS_PORT:
+  ecattle-kernel:
+    container_name: ecattle-kernel
+    build:
+      context: ../kernel
+      dockerfile: Dockerfile
+    environment:
+      TZ: America/Campo_Grande
+      REDIS_HOST:
+      REDIS_PORT:
+  ecattle-mongo:
+    container_name: ecattle-mongo
+    image: mongo:3
+    ports:
+      - "27017:27017"
+    environment:
+      TZ: America/Campo_Grande
+      # MONGO_INITDB_ROOT_USERNAME:
+      # MONGO_INITDB_ROOT_PASSWORD:
+  ecattle-redis:
+    container_name: ecattle-redis
+    image: redis:5-alpine
+    ports:
+      - "6379:6379"

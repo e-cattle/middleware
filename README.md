@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/e-cattle/art/master/eCattle.pnghttps://raw.githubusercontent.com/e-cattle/art/master/eCattle.png" width="300" alt="e-Cattle Logo" />
+<img src="https://raw.githubusercontent.com/e-cattle/art/master/eCattle.png" width="300" alt="e-Cattle Logo" />
 
 # Development environment to middleware BigBoxx.
 
@@ -7,7 +7,7 @@ This project will provide the development environment for BigBoxx modules.
 ## Prerequisites
 
 - Tested and Approved on MacOS and Ubuntu Linux Operation Systems;
-- Docker and docker-compose: ```https://docs.docker.com/get-docker/ and https://docs.docker.com/compose/install/```;
+- Docker and docker-compose: *https://docs.docker.com/get-docker/* and *https://docs.docker.com/compose/install/* ;
 - NodeJS v12.16.2;
 - NodeJS dependency managers **yarn** or **npm**.
 

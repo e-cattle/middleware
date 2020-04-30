@@ -18,20 +18,20 @@ This project will provide the development environment for BigBoxx modules.
 - The suggested folder name for the project's workspace is **bigboxx**.
 
 ```shell
-$ mkdir bigboxx
-$ cd bigboxx
-$ git clone https://github.com/e-cattle/install.git
-$ git clone https://github.com/e-cattle/kernel.git
-$ git clone https://github.com/e-cattle/query.git
-$ git clone https://github.com/e-cattle/totem.git
-$ git clone https://github.com/e-cattle/lora.git
+~$ mkdir bigboxx
+~$ cd bigboxx
+~/bigboxx$ git clone https://github.com/e-cattle/install.git
+~/bigboxx$ git clone https://github.com/e-cattle/kernel.git
+~/bigboxx$ git clone https://github.com/e-cattle/query.git
+~/bigboxx$ git clone https://github.com/e-cattle/totem.git
+~/bigboxx$ git clone https://github.com/e-cattle/lora.git
 ```
 
 ### Step 02: Download NodeJS dependencies for BigBoxx modules
 
 - It is necessary to access the folders of all projects to download the dependencies. 
 
-- Module Kernel
+- *Module Kernel*
 ```shell
 # Option: 01 - Using Yarn
 ~/bigboxx/kernel$ yarn install
@@ -39,7 +39,7 @@ $ git clone https://github.com/e-cattle/lora.git
 ~/bigboxx/kernel$ npm i
 ```
 
-- Module Query
+- *Module Query*
 ```shell
 # Option: 01 - Using Yarn
 ~/bigboxx/query$ yarn install
@@ -47,7 +47,7 @@ $ git clone https://github.com/e-cattle/lora.git
 ~/bigboxx/query$ npm i
 ```
 
-- Module Totem
+- *Module Totem*
 ```shell
 # Option: 01 - Using Yarn
 ~/bigboxx/totem$ yarn install
@@ -55,7 +55,7 @@ $ git clone https://github.com/e-cattle/lora.git
 ~/bigboxx/totem$ npm i
 ```
 
-- Module Lora
+- *Module Lora*
 ```shell
 # Option: 01 - Using Yarn
 ~/bigboxx/lora$ yarn install

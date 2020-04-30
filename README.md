@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/e-cattle/art/master/eCattle.png" width="300" alt="e-Cattle Logo" />
+<img src="https://raw.githubusercontent.com/e-cattle/art/master/eCattle.png" width="200" alt="e-Cattle Logo" />
 
 # Development environment to middleware BigBoxx.
 
@@ -7,7 +7,7 @@ This project will provide the development environment for BigBoxx modules.
 ## Prerequisites
 
 - Tested and Approved on MacOS and Ubuntu Linux Operation Systems;
-- Docker and docker-compose: *https://docs.docker.com/get-docker/* and *https://docs.docker.com/compose/install/* ;
+- Docker and docker-compose: **https://docs.docker.com/get-docker/** and **https://docs.docker.com/compose/install/** ;
 - NodeJS v12.16.2;
 - NodeJS dependency managers **yarn** or **npm**.
 
@@ -20,6 +20,7 @@ This project will provide the development environment for BigBoxx modules.
 ```shell
 ~$ mkdir bigboxx
 ~$ cd bigboxx
+~/bigboxx$ git clone https://github.com/e-cattle/middleware.git
 ~/bigboxx$ git clone https://github.com/e-cattle/install.git
 ~/bigboxx$ git clone https://github.com/e-cattle/kernel.git
 ~/bigboxx$ git clone https://github.com/e-cattle/query.git
@@ -31,7 +32,7 @@ This project will provide the development environment for BigBoxx modules.
 
 - It is necessary to access the folders of all projects to download the dependencies. 
 
-- *Module Kernel*
+- **Module Kernel**
 ```shell
 # Option: 01 - Using Yarn
 ~/bigboxx/kernel$ yarn install
@@ -39,7 +40,7 @@ This project will provide the development environment for BigBoxx modules.
 ~/bigboxx/kernel$ npm i
 ```
 
-- *Module Query*
+- **Module Query**
 ```shell
 # Option: 01 - Using Yarn
 ~/bigboxx/query$ yarn install
@@ -47,7 +48,7 @@ This project will provide the development environment for BigBoxx modules.
 ~/bigboxx/query$ npm i
 ```
 
-- *Module Totem*
+- **Module Totem**
 ```shell
 # Option: 01 - Using Yarn
 ~/bigboxx/totem$ yarn install
@@ -55,7 +56,7 @@ This project will provide the development environment for BigBoxx modules.
 ~/bigboxx/totem$ npm i
 ```
 
-- *Module Lora*
+- **Module Lora**
 ```shell
 # Option: 01 - Using Yarn
 ~/bigboxx/lora$ yarn install

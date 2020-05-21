@@ -71,6 +71,6 @@ This project will provide the development environment for BigBoxx modules.
 
 ```shell
 # Run only the first time. In the next executions the parameter --build is not necessary.
-~/bigboxx/kernel$ docker-compose up --build
+~/bigboxx/middleware$ docker-compose up --build
 ```
 

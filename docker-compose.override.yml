@@ -12,6 +12,12 @@ services:
     command: npm run start
     volumes:
       - ../kernel:/usr/app
+  ecattle-totem:
+    ports:
+      - "3002:3002"
+    command: npm run serve
+    volumes:
+      - ../totem:/usr/app
   ecattle-mongo-express:
     container_name: ecattle-mongo-express
     image: mongo-express:0.49

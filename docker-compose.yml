@@ -20,6 +20,13 @@ services:
       TZ: America/Campo_Grande
       REDIS_HOST:
       REDIS_PORT:
+  ecattle-totem:
+    container_name: ecattle-totem
+    build:
+      context: ../totem
+      dockerfile: Dockerfile
+    environment:
+      TZ: America/Campo_Grande
   ecattle-mongo:
     container_name: ecattle-mongo
     image: mongo:3

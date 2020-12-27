@@ -8,6 +8,7 @@ This project will provide the development environment for BigBoxx modules.
 
 - Tested and Approved on MacOS and Ubuntu Linux Operation Systems;
 - Docker and docker-compose: **https://docs.docker.com/get-docker/** and **https://docs.docker.com/compose/install/** ;
+- GIT;
 - NodeJS v12.16.2;
 - NodeJS dependency managers **yarn** or **npm**.
 

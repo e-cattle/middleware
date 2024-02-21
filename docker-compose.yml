@@ -11,6 +11,9 @@ services:
       MONGO_URI:
       REDIS_HOST:
       REDIS_PORT:
+    networks:
+      - ecattle-networks
+
   ecattle-kernel:
     container_name: ecattle-kernel
     build:
@@ -20,6 +23,9 @@ services:
       TZ: America/Campo_Grande
       REDIS_HOST:
       REDIS_PORT:
+    networks:
+      - ecattle-networks
+
   ecattle-totem:
     container_name: ecattle-totem
     build:
@@ -27,6 +33,9 @@ services:
       dockerfile: Dockerfile
     environment:
       TZ: America/Campo_Grande
+    networks:
+      - ecattle-networks
+
   ecattle-mongo:
     container_name: ecattle-mongo
     image: mongo:3
@@ -36,8 +45,26 @@ services:
       TZ: America/Campo_Grande
       # MONGO_INITDB_ROOT_USERNAME:
       # MONGO_INITDB_ROOT_PASSWORD:
+    networks:
+      - cattle-networks
+
   ecattle-redis:
     container_name: ecattle-redis
     image: redis:5-alpine
     ports:
       - "6379:6379"
+    networks:
+      - ecattle-networks
+
+  ecattle-sync:
+    image: python:3.6
+    container_name: ecattle-sync
+    tty: true
+    volumes:
+      - ../synchronize:/src/usr/app
+    networks:
+      - ecattle-networks
+
+networks:
+  ecattle-networks:
+    driver: bridge

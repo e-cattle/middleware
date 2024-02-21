@@ -27,6 +27,7 @@ This project will provide the development environment for BigBoxx modules.
 ~/bigboxx$ git clone https://github.com/e-cattle/query.git
 ~/bigboxx$ git clone https://github.com/e-cattle/totem.git
 ~/bigboxx$ git clone https://github.com/e-cattle/lora.git
+~/bigboxx$ git clone https://github.com/e-cattle/synchronize.git
 ```
 
 ### Step 02: Download NodeJS dependencies for BigBoxx modules
@@ -63,6 +64,14 @@ This project will provide the development environment for BigBoxx modules.
 ~/bigboxx/lora$ yarn install
 # Option: 02 - Unsing npm
 ~/bigboxx/lora$ npm i
+```
+
+- **Module Sync**
+```shell
+# Option: Using Python Venv
+~/bigboxx/synchronize$ python3 -m venv venv
+~/bigboxx/synchronize$ source venv/bin/activate
+~/bigboxx/synchronize$ pip install -r requeriments.txt
 ```
 
 ### Step 03: Building containers of BigBoxx modules with docker-compose

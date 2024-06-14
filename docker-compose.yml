@@ -46,7 +46,7 @@ services:
       # MONGO_INITDB_ROOT_USERNAME:
       # MONGO_INITDB_ROOT_PASSWORD:
     networks:
-      - cattle-networks
+      - ecattle-networks
 
   ecattle-redis:
     container_name: ecattle-redis
